@@ -5,7 +5,6 @@ import fs from 'fs';
 import matter from 'gray-matter';
 const PATH = 'pages/blog/posts';
 import readingTime from 'reading-time';
-import Link from 'next/link';
 import TextTruncate from 'react-text-truncate';
 
 import { Headline4 } from '~/components/Headlines';
@@ -210,18 +209,18 @@ const Home = (props: any) => {
             </h2>
 
             <div className='lg:w-[650px]  mx-auto my-10 grid grid-cols-1 lg:grid-cols-3 gap-8 justify-items-center '>
-              <Link
+              <a
                 href='/learn/getting-started-step-by-step'
                 className=' flex items-center justify-center rounded border-2 border-white dark:border-none text-white w-[194px] h-[40px] font-semibold bg-primary dark:shadow-2xl'
               >
                 Getting started
-              </Link>
-              <Link
+              </a>
+              <a
                 href='/slack'
                 className=' flex items-center justify-center rounded border-2 border-white dark:border-none text-white  w-[194px] h-[40px] font-semibold bg-primary dark:border-shadow-white  dark:shadow-2xl'
               >
                 Join Slack
-              </Link>
+              </a>
 
               <div className='flex herobtn items-center justify-center font-semibold w-[194px] h-[40px] rounded border-2 border-white dark:border-none text-white bg-primary mx-auto  dark:shadow-2xl'>
                 <div className='flex flex-row justify-center items-center mr-4 '>
@@ -382,7 +381,7 @@ const Home = (props: any) => {
           </div>
           <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12 mx-auto w-5/6 md:w-3/5 lg:w-5/6'>
             <div className='w-full mb-6 dark:shadow-2xl'>
-              <Link href='https://json-schema.org/slack'>
+              <a href='https://json-schema.org/slack'>
                 <h3 className='mb-4 font-semibold flex items-center dark:text-slate-200'>
                   Join the JSON Schema Slack Workspace!
                   <img src='/img/logos/Slack-mark.svg' className='w-8 h-8' />
@@ -396,7 +395,7 @@ const Home = (props: any) => {
                   Join our Slack to ask questions, get feedback on your
                   projects, and connect with +5000 practitioners and experts.
                 </p>
-              </Link>
+              </a>
               <button className='w-full lg:w-1/2 rounded border-2 bg-primary text-white h-[40px] flex items-center justify-center dark:border-none '>
                 <a
                   href='https://json-schema.org/slack'
@@ -412,7 +411,7 @@ const Home = (props: any) => {
             </div>
             {/* BlogPost Data */}
             <div className='w-full mb-6 dark:shadow-2xl'>
-              <Link href={`/blog/posts/${blogPosts[0].slug}`}>
+              <a href={`/blog/posts/${blogPosts[0].slug}`}>
                 <h3 className='mb-5 font-semibold pt-1 dark:text-slate-200'>
                   The JSON Schema Blog
                 </h3>
@@ -451,15 +450,15 @@ const Home = (props: any) => {
                     </div>
                   </div>
                 </div>
-              </Link>
+              </a>
 
               <div>
-                <Link
+                <a
                   href={`/blog/posts/${blogPosts[0].slug}`}
                   className=' w-full lg:w-1/2 rounded border-2 bg-primary text-white  h-[40px] text-center semi-bold flex items-center justify-center dark:border-none '
                 >
                   Read more{' '}
-                </Link>
+                </a>
               </div>
             </div>
             <div>
